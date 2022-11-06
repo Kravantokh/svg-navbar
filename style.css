@@ -1,0 +1,56 @@
+:root{
+	/* Main theme color. Brighter with every step. */
+	--c0: #010110;
+
+	--c1: #004c4c;
+	--c2: #006666;
+	--c3: #008080;
+	--c4: #66b2b2;
+	--c5: #b2d8d8;
+	/* The inverse of the main colors. */
+	--ic0: #fefeef;
+	
+
+	--font-color: var(--ic0);
+	--bg-color: var(--c0);
+}
+
+body{
+	color: var(--font-color);
+	background-color: var(--bg-color);
+	margin: 0px;
+}
+
+object{
+	margin: -2px 0px;
+}
+
+/*
+
+
+		<animate id="extend"
+			attributeName="points"
+			from="790,200 790,100 790,0 0,0 0,200 790,200"
+			to="850,200 900,100 850,0 0,0 0,200 850,200"
+			begin="overlay.mouseover"
+			dur="500ms"
+			fill="freeze"
+		/>
+
+		<animate id="retract"
+			attributeName="points"
+			from="850,200 900,100 850,0 0,0 0,200 850,200"
+			to="790,200 790,100 790,0 0,0 0,200 790,200"
+			begin="overlay.mouseout"
+			dur="300ms"
+			fill="freeze"
+			/>"
+			overlay.mouseover;
+			overlay.mouseover+500ms;
+			overlay.mouseout;
+			overlay.mouseout+300ms
+			"
+
+
+		points="810,200 810,100 810,0 0,0 0,200 810,200"
+ * */

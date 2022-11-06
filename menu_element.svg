@@ -1,0 +1,72 @@
+<svg version="1.1"
+	width="900" height="200"
+	viewBox="0 0 900 200"
+	preserveAspectRatio="xMinYMin"
+	xmlns="http://www.w3.org/2000/svg">
+	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+		<polygon id="overlay"
+			points="810,200 810,100 810,0 0,0 0,200 810,200"
+			fill="#006666"
+			stroke-linejoin="round"
+			stroke-width="7"
+			stroke="#66b2b2"
+		>
+		
+			<animate id="extend"
+				attributeName="points"
+				from="810,200 810,100 810,0 0,0 0,200 810,200"
+				to="850,200 900,100 850,0 0,0 0,200 850,200"
+				begin="overlay.mouseover"
+				dur="200ms"
+				fill="freeze"
+			/>
+			
+			<animate id="higlight-bg"
+				attributeName="fill"
+				from="#006666"
+				to="#66b2b2"
+				begin="overlay.mouseover"
+				dur="300ms"
+				fill="freeze"
+			/>
+
+			<animate id="unhighlight-bg"
+				attributeName="fill"
+				from="#66b2b2"
+				to="#006666"
+				begin="overlay.mouseout"
+				dur="500ms"
+				fill="freeze"
+			/>
+			
+			<animate id="retract"
+				attributeName="points"
+				from="850,200 900,100 850,0 0,0 0,200 850,200"
+				to="810,200 810,100 810,0 0,0 0,200 810,200"
+				begin="overlay.mouseout"
+				dur="200ms"
+				fill="freeze"
+				/>"
+		</polygon>
+
+		<text x="25" y="125" fill="#f8f8f8" font-size="70px" text-rendering="auto">Example 
+			<animate attributeName="fill"
+				id="highlight"
+				from="#f8f8f8"
+				to="#080808"
+				begin="overlay.mouseover"
+				dur="100ms"
+				fill="freeze"
+			/>
+			<animate attributeName="fill"
+				id="unhighlight"
+				from="#080808"
+				to="#f8f8f8f"
+				begin="overlay.mouseout"
+				dur="500ms"
+				fill="freeze"
+			/>
+		</text>
+	</a>
+</svg>
+
